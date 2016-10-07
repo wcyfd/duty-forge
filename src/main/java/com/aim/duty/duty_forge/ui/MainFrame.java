@@ -4,21 +4,21 @@ package com.aim.duty.duty_forge.ui;
 import java.awt.EventQueue;
 import java.util.Map;
 
+import com.aim.duty.duty_base.cache.config.FuelConfigCache;
+import com.aim.duty.duty_base.cache.config.MagicConfigCache;
+import com.aim.duty.duty_base.cache.config.MineConfigCache;
+import com.aim.duty.duty_base.cache.config.Shape1ConfigCache;
+import com.aim.duty.duty_base.cache.config.Shape2ConfigCache;
+import com.aim.duty.duty_base.cache.config.Shape3ConfigCache;
 import com.aim.duty.duty_base.entity.Equip;
 import com.aim.duty.duty_base.entity.Forge;
+import com.aim.duty.duty_base.entity.config.MagicConfig;
+import com.aim.duty.duty_base.entity.config.MineConfig;
+import com.aim.duty.duty_base.entity.config.Shape1Config;
+import com.aim.duty.duty_base.entity.config.Shape2Config;
+import com.aim.duty.duty_base.entity.config.Shape3Config;
 import com.aim.duty.duty_forge.cache.ConstantCache;
 import com.aim.duty.duty_forge.cache.EquipCache;
-import com.aim.duty.duty_forge.cache.config.FuelConfigCache;
-import com.aim.duty.duty_forge.cache.config.MagicConfigCache;
-import com.aim.duty.duty_forge.cache.config.MineConfigCache;
-import com.aim.duty.duty_forge.cache.config.Shape1ConfigCache;
-import com.aim.duty.duty_forge.cache.config.Shape2ConfigCache;
-import com.aim.duty.duty_forge.cache.config.Shape3ConfigCache;
-import com.aim.duty.duty_forge.entity.config.MagicConfig;
-import com.aim.duty.duty_forge.entity.config.MineConfig;
-import com.aim.duty.duty_forge.entity.config.Shape1Config;
-import com.aim.duty.duty_forge.entity.config.Shape2Config;
-import com.aim.duty.duty_forge.entity.config.Shape3Config;
 
 public class MainFrame extends javax.swing.JFrame {
 

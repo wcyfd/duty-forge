@@ -2,20 +2,20 @@ package com.aim.duty.duty_forge.service;
 
 import java.awt.EventQueue;
 
+import com.aim.duty.duty_base.cache.config.FuelConfigCache;
 import com.aim.duty.duty_base.entity.Equip;
 import com.aim.duty.duty_base.entity.Forge;
+import com.aim.duty.duty_base.entity.config.FuelConfig;
 import com.aim.duty.duty_forge.cache.ConstantCache;
-import com.aim.duty.duty_forge.cache.config.FuelConfigCache;
-import com.aim.duty.duty_forge.entity.config.FuelConfig;
 import com.aim.duty.duty_forge.ui.MainFrame;
 
-public class ServiceImplProxy implements Service {
+public class ForgeServiceImplProxy implements ForgeService {
 
-	public ServiceImplProxy(Service service) {
+	public ForgeServiceImplProxy(ForgeService service) {
 		this.service = service;
 	}
 
-	private Service service;
+	private ForgeService service;
 
 	@Override
 	public void create(Forge forge, int propId, int num, int shape1, int shape2, int shape3) {

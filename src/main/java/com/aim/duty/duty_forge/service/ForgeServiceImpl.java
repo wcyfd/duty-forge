@@ -4,25 +4,26 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Random;
 
+import com.aim.duty.duty_base.cache.config.FuelConfigCache;
+import com.aim.duty.duty_base.cache.config.MineConfigCache;
+import com.aim.duty.duty_base.cache.config.Shape1ConfigCache;
+import com.aim.duty.duty_base.cache.config.Shape2ConfigCache;
+import com.aim.duty.duty_base.cache.config.Shape3ConfigCache;
 import com.aim.duty.duty_base.entity.Equip;
 import com.aim.duty.duty_base.entity.Forge;
 import com.aim.duty.duty_base.entity.Prop;
+import com.aim.duty.duty_base.entity.config.FuelConfig;
+import com.aim.duty.duty_base.entity.config.MineConfig;
+import com.aim.duty.duty_base.entity.config.Shape1Config;
+import com.aim.duty.duty_base.entity.config.Shape2Config;
+import com.aim.duty.duty_base.entity.config.Shape3Config;
+import com.aim.duty.duty_base.service.Constant;
 import com.aim.duty.duty_base.util.Util;
 import com.aim.duty.duty_forge.cache.ConstantCache;
 import com.aim.duty.duty_forge.cache.EquipCache;
 import com.aim.duty.duty_forge.cache.PropCache;
-import com.aim.duty.duty_forge.cache.config.FuelConfigCache;
-import com.aim.duty.duty_forge.cache.config.MineConfigCache;
-import com.aim.duty.duty_forge.cache.config.Shape1ConfigCache;
-import com.aim.duty.duty_forge.cache.config.Shape2ConfigCache;
-import com.aim.duty.duty_forge.cache.config.Shape3ConfigCache;
-import com.aim.duty.duty_forge.entity.config.FuelConfig;
-import com.aim.duty.duty_forge.entity.config.MineConfig;
-import com.aim.duty.duty_forge.entity.config.Shape1Config;
-import com.aim.duty.duty_forge.entity.config.Shape2Config;
-import com.aim.duty.duty_forge.entity.config.Shape3Config;
 
-public class ServiceImpl implements Service {
+public class ForgeServiceImpl implements ForgeService {
 
 	@Override
 	public void create(Forge forge, int propId, int num, int shape1, int shape2, int shape3) {

@@ -1,13 +1,13 @@
 package com.aim.duty.duty_forge;
 
+import com.aim.duty.duty_base.cache.config.ConfigCache;
 import com.aim.duty.duty_base.entity.Forge;
 import com.aim.duty.duty_forge.cache.ConstantCache;
 import com.aim.duty.duty_forge.cache.PropCache;
-import com.aim.duty.duty_forge.cache.config.ConfigCache;
 import com.aim.duty.duty_forge.schedule.ForgeScheduled;
-import com.aim.duty.duty_forge.service.Service;
-import com.aim.duty.duty_forge.service.ServiceImpl;
-import com.aim.duty.duty_forge.service.ServiceImplProxy;
+import com.aim.duty.duty_forge.service.ForgeService;
+import com.aim.duty.duty_forge.service.ForgeServiceImpl;
+import com.aim.duty.duty_forge.service.ForgeServiceImplProxy;
 import com.aim.duty.duty_forge.ui.MainFrame;
 
 /**
@@ -21,7 +21,7 @@ public class DutyForgeApp {
 		ConfigCache.init();
 
 		Forge forge = new Forge();
-		Service impl = new ServiceImplProxy(new ServiceImpl());
+		ForgeService impl = new ForgeServiceImplProxy(new ForgeServiceImpl());
 
 		ConstantCache.forge = forge;
 		ConstantCache.service = impl;

@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.aim.duty.duty_forge.entity.Prop;
+import com.aim.duty.duty_base.entity.Prop;
 import com.aim.duty.duty_forge.entity.WeightDuration;
 
 public class PropCache {

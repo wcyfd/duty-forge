@@ -1,9 +1,9 @@
 package com.aim.duty.duty_forge;
 
+import com.aim.duty.duty_base.entity.Forge;
 import com.aim.duty.duty_forge.cache.ConstantCache;
 import com.aim.duty.duty_forge.cache.PropCache;
 import com.aim.duty.duty_forge.cache.config.ConfigCache;
-import com.aim.duty.duty_forge.entity.Forge;
 import com.aim.duty.duty_forge.schedule.ForgeScheduled;
 import com.aim.duty.duty_forge.service.Service;
 import com.aim.duty.duty_forge.service.ServiceImpl;

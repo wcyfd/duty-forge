@@ -1,5 +1,7 @@
 package com.aim.duty.duty_forge.entity;
 
+import com.aim.duty.duty_base.entity.AbstractProp;
+
 public class Prop extends AbstractProp {
 
 	private int propId;

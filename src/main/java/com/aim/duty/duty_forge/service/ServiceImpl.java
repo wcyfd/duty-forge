@@ -4,6 +4,7 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Random;
 
+import com.aim.duty.duty_base.util.Util;
 import com.aim.duty.duty_forge.cache.ConstantCache;
 import com.aim.duty.duty_forge.cache.EquipCache;
 import com.aim.duty.duty_forge.cache.PropCache;
@@ -20,7 +21,6 @@ import com.aim.duty.duty_forge.entity.config.MineConfig;
 import com.aim.duty.duty_forge.entity.config.Shape1Config;
 import com.aim.duty.duty_forge.entity.config.Shape2Config;
 import com.aim.duty.duty_forge.entity.config.Shape3Config;
-import com.aim.duty.duty_forge.util.Util;
 
 public class ServiceImpl implements Service {
 

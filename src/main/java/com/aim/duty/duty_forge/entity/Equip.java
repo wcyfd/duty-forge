@@ -3,6 +3,8 @@ package com.aim.duty.duty_forge.entity;
 import java.util.HashMap;
 import java.util.Map;
 
+import com.aim.duty.duty_base.entity.AbstractProp;
+
 public class Equip extends AbstractProp {
 
 	private Map<String, Integer> attributeMap = new HashMap<>();

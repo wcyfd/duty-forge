@@ -1,7 +1,7 @@
 package com.aim.duty.duty_forge.service;
 
-import com.aim.duty.duty_base.entity.Equip;
-import com.aim.duty.duty_base.entity.Forge;
+import com.aim.duty.duty_base.entity.bo.Equip;
+import com.aim.duty.duty_base.entity.bo.Forge;
 
 public interface ForgeService {
 	void create(Forge forge,int propId, int num, int shape1, int shape2, int shape3);

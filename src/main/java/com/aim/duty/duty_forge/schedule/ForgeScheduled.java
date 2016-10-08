@@ -4,7 +4,7 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.ScheduledThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
-import com.aim.duty.duty_base.entity.Forge;
+import com.aim.duty.duty_base.entity.bo.Forge;
 import com.aim.duty.duty_forge.cache.ConstantCache;
 import com.aim.duty.duty_forge.service.ForgeService;
 

@@ -1,6 +1,6 @@
 package com.aim.duty.duty_forge.cache;
 
-import com.aim.duty.duty_base.entity.Forge;
+import com.aim.duty.duty_base.entity.bo.Forge;
 import com.aim.duty.duty_forge.service.ForgeService;
 import com.aim.duty.duty_forge.ui.MainFrame;
 

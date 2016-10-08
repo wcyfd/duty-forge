@@ -3,8 +3,8 @@ package com.aim.duty.duty_forge.service;
 import java.awt.EventQueue;
 
 import com.aim.duty.duty_base.cache.config.FuelConfigCache;
-import com.aim.duty.duty_base.entity.Equip;
-import com.aim.duty.duty_base.entity.Forge;
+import com.aim.duty.duty_base.entity.bo.Equip;
+import com.aim.duty.duty_base.entity.bo.Forge;
 import com.aim.duty.duty_base.entity.config.FuelConfig;
 import com.aim.duty.duty_forge.cache.ConstantCache;
 import com.aim.duty.duty_forge.ui.MainFrame;

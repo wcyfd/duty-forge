@@ -11,7 +11,7 @@ import com.aim.duty.duty_base.cache.config.Shape1ConfigCache;
 import com.aim.duty.duty_base.cache.config.Shape2ConfigCache;
 import com.aim.duty.duty_base.cache.config.Shape3ConfigCache;
 import com.aim.duty.duty_base.entity.bo.Equip;
-import com.aim.duty.duty_base.entity.bo.Forge;
+import com.aim.duty.duty_base.entity.bo.Furnace;
 import com.aim.duty.duty_base.entity.config.MagicConfig;
 import com.aim.duty.duty_base.entity.config.MineConfig;
 import com.aim.duty.duty_base.entity.config.Shape1Config;
@@ -356,21 +356,21 @@ public class MainFrame extends javax.swing.JFrame {
 
 	private void hit1JButtonActionPerformed(java.awt.event.ActionEvent evt) {
 		// TODO add your handling code here:
-		Forge forge = ConstantCache.forge;
+		Furnace forge = ConstantCache.forge;
 		ConstantCache.service.hit(forge,  1);
 		EventQueue.invokeLater(printRunnable);
 	}
 
 	private void hit2JButtonActionPerformed(java.awt.event.ActionEvent evt) {
 		// TODO add your handling code here:
-		Forge forge = ConstantCache.forge;
+		Furnace forge = ConstantCache.forge;
 		ConstantCache.service.hit(forge,  2);
 		EventQueue.invokeLater(printRunnable);
 	}
 
 	private void hit3JButtonActionPerformed(java.awt.event.ActionEvent evt) {
 		// TODO add your handling code here:
-		Forge forge = ConstantCache.forge;
+		Furnace forge = ConstantCache.forge;
 		ConstantCache.service.hit(forge,  3);
 		EventQueue.invokeLater(printRunnable);
 	}

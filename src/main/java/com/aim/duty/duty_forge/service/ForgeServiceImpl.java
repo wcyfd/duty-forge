@@ -10,7 +10,7 @@ import com.aim.duty.duty_base.cache.config.Shape1ConfigCache;
 import com.aim.duty.duty_base.cache.config.Shape2ConfigCache;
 import com.aim.duty.duty_base.cache.config.Shape3ConfigCache;
 import com.aim.duty.duty_base.entity.bo.Equip;
-import com.aim.duty.duty_base.entity.bo.Forge;
+import com.aim.duty.duty_base.entity.bo.Furnace;
 import com.aim.duty.duty_base.entity.bo.Prop;
 import com.aim.duty.duty_base.entity.config.FuelConfig;
 import com.aim.duty.duty_base.entity.config.MineConfig;
@@ -26,7 +26,7 @@ import com.aim.duty.duty_forge.cache.PropCache;
 public class ForgeServiceImpl implements ForgeService {
 
 	@Override
-	public void create(Forge forge, int propId, int num, int shape1, int shape2, int shape3) {
+	public void create(Furnace forge, int propId, int num, int shape1, int shape2, int shape3) {
 		Equip equip = this.createEquip();
 		forge.setEquip(equip);
 
@@ -41,7 +41,7 @@ public class ForgeServiceImpl implements ForgeService {
 	}
 
 	@Override
-	public void addFuel(Forge forge, int propId, int num) {
+	public void addFuel(Furnace forge, int propId, int num) {
 		int readyFuelId = forge.getReadyFuelId();
 		if (readyFuelId == propId) {
 			forge.setReadyFuelNum(forge.getReadyFuelNum() + num);
@@ -53,7 +53,7 @@ public class ForgeServiceImpl implements ForgeService {
 	}
 
 	@Override
-	public void updateTemperature(Forge forge) {
+	public void updateTemperature(Furnace forge) {
 		int nowTime = Util.getTime2();
 
 		if (nowTime >= forge.getBurnEndTime()) {
@@ -94,7 +94,7 @@ public class ForgeServiceImpl implements ForgeService {
 	}
 
 	@Override
-	public void hit(Forge forge, int partId) {
+	public void hit(Furnace forge, int partId) {
 		int temperature = forge.getTemperature();
 		Equip equip = forge.getEquip();
 		if (equip == null) {
@@ -191,7 +191,7 @@ public class ForgeServiceImpl implements ForgeService {
 	}
 
 	@Override
-	public void addMagic(Forge forge, int partId, int magicId) {
+	public void addMagic(Furnace forge, int partId, int magicId) {
 		Equip equip = ConstantCache.forge.getEquip();
 		if (equip == null)
 			return;
@@ -203,7 +203,7 @@ public class ForgeServiceImpl implements ForgeService {
 	}
 
 	@Override
-	public void sharp(Forge forge) {
+	public void sharp(Furnace forge) {
 		Equip equip = forge.getEquip();
 		if (equip == null)
 			return;
@@ -218,7 +218,7 @@ public class ForgeServiceImpl implements ForgeService {
 	}
 
 	@Override
-	public void destroyEquip(Forge forge, int equipId) {
+	public void destroyEquip(Furnace forge, int equipId) {
 		Equip equip = EquipCache.getEquipMap().get(equipId);
 		int materalId = equip.getAttributeMap().get(Constant.MATERIAL);
 		int materal_count = equip.getAttributeMap().get(Constant.MATERIAL_COUNT);

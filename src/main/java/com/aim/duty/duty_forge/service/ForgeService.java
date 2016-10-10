@@ -1,22 +1,22 @@
 package com.aim.duty.duty_forge.service;
 
 import com.aim.duty.duty_base.entity.bo.Equip;
-import com.aim.duty.duty_base.entity.bo.Forge;
+import com.aim.duty.duty_base.entity.bo.Furnace;
 
 public interface ForgeService {
-	void create(Forge forge,int propId, int num, int shape1, int shape2, int shape3);
+	void create(Furnace forge,int propId, int num, int shape1, int shape2, int shape3);
 
-	void addFuel(Forge forge, int propId, int num);
+	void addFuel(Furnace forge, int propId, int num);
 
-	void updateTemperature(Forge forge);
+	void updateTemperature(Furnace forge);
 
-	void hit(Forge forge, int partId);
+	void hit(Furnace forge, int partId);
 
-	void addMagic(Forge forge,int partId, int magicId);
+	void addMagic(Furnace forge,int partId, int magicId);
 
-	void sharp(Forge forge);
+	void sharp(Furnace forge);
 	
-	void destroyEquip(Forge forge,int equipId);
+	void destroyEquip(Furnace forge,int equipId);
 	
 	void print(StringBuilder sb,Equip equip);
 }

@@ -9,13 +9,13 @@ import com.aim.duty.duty_base.entity.config.FuelConfig;
 import com.aim.duty.duty_forge.cache.ConstantCache;
 import com.aim.duty.duty_forge.ui.MainFrame;
 
-public class ForgeServiceImplProxy implements ForgeService {
+public class FurnaceServiceImplProxy implements FurnaceService {
 
-	public ForgeServiceImplProxy(ForgeService service) {
+	public FurnaceServiceImplProxy(FurnaceService service) {
 		this.service = service;
 	}
 
-	private ForgeService service;
+	private FurnaceService service;
 
 	@Override
 	public void create(Furnace forge, int propId, int num, int shape1, int shape2, int shape3) {

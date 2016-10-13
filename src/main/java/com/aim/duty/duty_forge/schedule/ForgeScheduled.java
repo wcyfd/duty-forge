@@ -6,7 +6,7 @@ import java.util.concurrent.TimeUnit;
 
 import com.aim.duty.duty_base.entity.bo.Furnace;
 import com.aim.duty.duty_forge.cache.ConstantCache;
-import com.aim.duty.duty_forge.service.ForgeService;
+import com.aim.duty.duty_forge.service.FurnaceService;
 
 public class ForgeScheduled {
 	private static ScheduledExecutorService fightScheduled = new ScheduledThreadPoolExecutor(1);
@@ -18,7 +18,7 @@ public class ForgeScheduled {
 	private static void updateTemperature() {
 		fightScheduled.scheduleAtFixedRate(new Runnable() {
 			public void run() {
-				ForgeService service = ConstantCache.service;
+				FurnaceService service = ConstantCache.service;
 				Furnace forge = ConstantCache.forge;
 				if (service != null && forge != null)
 					service.updateTemperature(forge);

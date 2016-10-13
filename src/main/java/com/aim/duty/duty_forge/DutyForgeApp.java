@@ -5,9 +5,9 @@ import com.aim.duty.duty_base.entity.bo.Furnace;
 import com.aim.duty.duty_forge.cache.ConstantCache;
 import com.aim.duty.duty_forge.cache.PropCache;
 import com.aim.duty.duty_forge.schedule.ForgeScheduled;
-import com.aim.duty.duty_forge.service.ForgeService;
-import com.aim.duty.duty_forge.service.ForgeServiceImpl;
-import com.aim.duty.duty_forge.service.ForgeServiceImplProxy;
+import com.aim.duty.duty_forge.service.FurnaceService;
+import com.aim.duty.duty_forge.service.FurnaceServiceImpl;
+import com.aim.duty.duty_forge.service.FurnaceServiceImplProxy;
 import com.aim.duty.duty_forge.ui.MainFrame;
 
 /**
@@ -21,7 +21,7 @@ public class DutyForgeApp {
 		ConfigCache.init();
 
 		Furnace forge = new Furnace();
-		ForgeService impl = new ForgeServiceImplProxy(new ForgeServiceImpl());		
+		FurnaceService impl = new FurnaceServiceImplProxy(new FurnaceServiceImpl());		
 
 		ConstantCache.forge = forge;
 		ConstantCache.service = impl;

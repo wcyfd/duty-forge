@@ -23,7 +23,7 @@ import com.aim.duty.duty_forge.cache.ConstantCache;
 import com.aim.duty.duty_forge.cache.EquipCache;
 import com.aim.duty.duty_forge.cache.PropCache;
 
-public class ForgeServiceImpl implements ForgeService {
+public class FurnaceServiceImpl implements FurnaceService {
 
 	@Override
 	public void create(Furnace forge, int propId, int num, int shape1, int shape2, int shape3) {
